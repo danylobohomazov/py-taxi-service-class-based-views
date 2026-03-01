@@ -2,10 +2,10 @@
 {% block content %}
   <h1>Cars</h1>
   {% if car_list %}
-    <ul>
+    <table>
       {% for car in car_list %}
-        <li><a href="{{ car.get_absolute_url }}">{{ car.model }}</a></li>
+        <tr><th><a href="{{ car.get_absolute_url }}">{{ car.model }}</a></th></tr>
       {% endfor %}
-    </ul>
+    </table>
   {% endif %}
 {% endblock %}
