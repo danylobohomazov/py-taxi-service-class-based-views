@@ -4,7 +4,7 @@
   {% if car_list %}
     <table>
       {% for car in car_list %}
-        <tr><th><a href="{{ car.get_absolute_url }}">{{ car.model }}</a></th></tr>
+        <tr><th><a href="{{ car.get_absolute_url }}">{{ car.id }} {{ car.model }}</a></th></tr>
       {% endfor %}
     </table>
   {% endif %}
